@@ -16,5 +16,10 @@ namespace ExaminationSystem.Models
                 Console.WriteLine(option);
             }
         }
+
+        public override string GetCorrectAnswer()
+        {
+            return CorrectAnswer;
+        }
     }
 }

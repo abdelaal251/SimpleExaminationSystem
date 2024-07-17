@@ -10,5 +10,10 @@ namespace ExaminationSystem.Models
         {
             Console.WriteLine($"{Header} - {Body} (True/False)");
         }
+
+        public override string GetCorrectAnswer()
+        {
+            return CorrectAnswer.ToString();
+        }
     }
 }

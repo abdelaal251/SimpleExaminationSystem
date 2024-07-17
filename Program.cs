@@ -27,7 +27,6 @@ namespace ExaminationSystem
             AddQuestions(exam);
 
             exam.ShowExam();
-            exam.ToString();
         }
 
         static void AddQuestions(Exam exam)
@@ -59,7 +58,7 @@ namespace ExaminationSystem
                 Body = "Which of the following are even numbers?",
                 Marks = 3,
                 Options = new List<string> { "2", "3", "4", "5" },
-                CorrectAnswers = new List<string> { "2", "4"}
+                CorrectAnswers = new List<string> { "2", "4" }
             };
             questionList.Add(caQuestion);
 

@@ -14,13 +14,15 @@ namespace ExaminationSystem.Models
         public override void ShowExam()
         {
             Console.WriteLine("Showing Final Exam");
+
+            // Display each question
             foreach (var question in Questions)
             {
                 question.Display();
             }
+
             Mode = ExamMode.Finished;
             OnExamModeChanged(Mode);
-            // Do not show correct answers
         }
     }
 }
